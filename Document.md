@@ -1,13 +1,14 @@
-# Found in Noise
+# Found in Noise: Final Project Documentation of Spatial Audio II
  
 *An Autogenous Multichannel Fixed-Media Composition*
  
-Final Project Documentation of Spatial Audio II
+**Author:** Xinni Li, Canting Zhu
 
+**Date:** 2026-05-01
  
 ## Inspiration
 
-The primary inspiration for our project comes from Alvin Lucier’s work *I Am Sitting in a Room* (1969).
+The primary inspiration for our project comes from Alvin Lucier’s work [*I Am Sitting in a Room* (1969)](https://www.youtube.com/watch?v=bhtO4DsSazc&list=RDbhtO4DsSazc&start_radio=1).
 In Lucier’s creative process, he sat in a room holding a tape recorder and a microphone, recording himself reading a short text. The text begins: "I am sitting in a room, different from the one you are in now. I am recording the sound of my speaking voice..." He then played this recording back into the same room through a loudspeaker and used the microphone to record it onto a second tape. Next, he played this second tape back into the room and recorded a third tape. He repeated this process 32 times. Throughout the entire playback of this piece, what you hear is a slow evolution. In the initial generations of recordings, his voice is clearly discernible. However, with each cycle of playback within the room, the room's inherent resonant frequencies become slightly stronger, while those frequencies absorbed by the room become slightly weaker. By around the 10th generation, the words begin to blur. By the 20th generation, the words have vanished entirely—the consonantal elements have completely dissolved, leaving behind only a humming stream of sound filled with specific pitches. In the final generation of recordings, no trace of speech remains; all that is left is the room itself.
 
 The conceptual intent underlying this work is rooted in process-based sound art. In this context, the room itself acts as the true "composer." Each room possesses unique acoustic characteristics, collectively determined by its dimensions, materials, and geometry. Typically, we are unable to directly perceive this distinct acoustic signature, as it is invariably masked by the various active sound sources present within the room. The creative methodology employed by Lucier was specifically designed to enable the room to "hear" its own voice. Through this recursive process, the human voice is gradually filtered out. Ultimately, only the room's own pure sound remains. Our project extends this concept beyond the context of mono audio to a spatial audio environment.
