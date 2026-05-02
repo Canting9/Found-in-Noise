@@ -5,6 +5,10 @@
 **Author:** Xinni Li, Canting Zhu
 
 **Date:** 2026-05-01
+
+**Project Materials:**
+- 🎬 [Setup & process video](https://drive.google.com/file/d/1D1LflKJ_ksnrdm2uL1q-FVpZZ3-W3Rm4/view?usp=sharing)
+- 🎧 [Final audio (Binaural)](https://drive.google.com/file/d/1A7ic5gQJcWh8YDq5pvndJBrrqIevXWBv/view?usp=sharing)
  
 ## Inspiration
 
@@ -21,12 +25,10 @@ The project is implemented in PureData, with the Zerr~ externals handling the sp
 We also customized two parameters that shape the character of the spatial movement. A custom trajectory ordering (1 8 2 7 3 6 4 5) pairs opposite speakers rather than walking them sequentially, so the sound leaps across the room instead of orbiting the listener. A topological "neighbor graph" defines which speakers are considered logically adjacent — independent of their physical positions — and the spatial trajectory walks this graph, producing non-circular, almost teleporting motion.
 
 ## Implementation
-This is our [setup video](https://drive.google.com/file/d/1D1LflKJ_ksnrdm2uL1q-FVpZZ3-W3Rm4/view?usp=sharing).
 
 A single microphone is placed at the center of the listening space to capture the combined acoustic output of all eight speakers. The signal flow begins with a 30-second stereo source, which is loaded into Pure Data and spatialized across eight channels via the Zerr patch. This eight-channel output is played through the speaker array, propagates through the room, and is captured by the microphone. The microphone signal is recorded into Reaper, where it is exported as a new stereo file and re-imported into Pure Data as the source for the next iteration. This recursive cycle is repeated six times and each generation produces roughly 30 seconds of recorded material. An important aspect of the implementation is the interaction between multiple propagation paths. Once all six recordings are complete, they are assembled in Reaper by concatenating the generations in chronological order. The final output is a binaural stereo file of approximately three minutes, in which the listener hears the same source material gradually transformed across six successive passes through the patch and the room.
 
 ## Results
-This is our [final audio file (Binaural)](https://drive.google.com/file/d/1A7ic5gQJcWh8YDq5pvndJBrrqIevXWBv/view?usp=sharing).
 
 We noticed that, as the number of iterations increases, the original content becomes progressively less recognizable. As in Lucier's I Am Sitting in a Room, intelligible musical features begin to dissolve, replaced by sustained tones and resonant textures. However, in this spatial context, the transformation is not purely spectral but also spatial: certain directions within the speaker array begin to dominate perceptually, and the accumulation of phase interactions and interference patterns across multiple channels produces a richer, more complex frequency response than would be expected in a mono or stereo system. 
 
