@@ -8,7 +8,7 @@
 
 **Project Materials:**
 - 🎬 [Setup & process video](https://drive.google.com/file/d/1D1LflKJ_ksnrdm2uL1q-FVpZZ3-W3Rm4/view?usp=sharing)
-- 🎧 [Final audio (Binaural)](https://drive.google.com/file/d/1A7ic5gQJcWh8YDq5pvndJBrrqIevXWBv/view?usp=sharing)
+- 🎧 [Audio file(Binaural)](https://drive.google.com/file/d/1A7ic5gQJcWh8YDq5pvndJBrrqIevXWBv/view?usp=sharing)
  
 ## Inspiration
 
