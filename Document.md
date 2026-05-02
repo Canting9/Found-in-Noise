@@ -24,7 +24,7 @@ The core concept of this project is the combination of temporal iteration and sp
 The project is implemented in PureData, with the Zerr~ externals handling the spatialization. In our patch, the input audio is continuously analyzed for its spectral centroid — a descriptor that tracks the "center of mass" of the sound's frequency content over time. This single feature drives the entire spatial response: the centroid value controls a set of eight gain envelopes, one per speaker, which together determine how the sound is dispersed across the array. Bright, spectrally unstable input activates multiple envelopes at once and spreads the sound across many speakers; stable input produces sparse envelope activity and focuses the sound to fewer points. No manual panning is involved.
 We also customized two parameters that shape the character of the spatial movement. A custom trajectory ordering (1 8 2 7 3 6 4 5) pairs opposite speakers rather than walking them sequentially, so the sound leaps across the room instead of orbiting the listener. A topological "neighbor graph" defines which speakers are considered logically adjacent — independent of their physical positions — and the spatial trajectory walks this graph, producing non-circular, almost teleporting motion.
 
-![Pure Data patch](p.png)
+![Pure Data patch](pd.png)
 
 ## Implementation
 
