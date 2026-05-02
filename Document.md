@@ -39,3 +39,6 @@ We hypothesize that this is the result of the combined effects of several factor
 3. The multi-speaker configuration. Slight phase misalignments and interference between the eight speakers disproportionately affect higher frequencies — short wavelengths are more sensitive to small spatial offsets, causing cancellation and diffusion. Lower frequencies, with their longer wavelengths, remain more spatially stable and coherent across the array.
 
 Overall, our findings suggest that the system reveals not only the resonant characteristics of the room, but also biases embedded in both the source material and the spatial playback configuration. The final output can therefore be understood as a convergence of three layers — spectral weighting in the source, acoustic persistence in the room, and spatial behavior of the speaker array — all pulling in the same direction. The iterative process acts not only as a probe of spatial resonance, but as a mechanism that reveals and exaggerates inherent spectral biases at every stage of the chain.
+
+## References
+- [Lucier, Alvin. *I Am Sitting in a Room*. 1969.](https://www.youtube.com/watch?v=bhtO4DsSazc&list=RDbhtO4DsSazc&start_radio=1)
