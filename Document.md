@@ -19,9 +19,13 @@ The conceptual intent underlying this work is rooted in process-based sound art.
 
 ## Concept
 
-The core concept of this project is the combination of temporal iteration and spatial transformation. Like Lucier's original process, we employ repeated cycles of playback and recording. However, instead of maintaining a fixed channel format, each iteration introduces spatialization across an eight-speaker system. In this framework, sound is not only filtered by the room but also reconfigured in space during each iteration. The system effectively becomes a feedback loop in which spatial encoding, acoustic propagation, and recording continuously interact. As a result, the final output reflects not only the resonant characteristics of the room but also the structural influence of the speaker arrangement and spatial processing.
+The core concept of this project is the combination of temporal iteration and spatial transformation. Like Lucier's original process, we employ repeated cycles of playback and recording. However, instead of maintaining a fixed channel format, each iteration introduces spatialization across an eight-speaker system.
+
+Drawing on Denis Smalley's notion of "space-form" — the shaping of spatial experience through the acousmatic presentation of sound — our system treats the speaker array not merely as a reproduction medium but as an active compositional element. In this framework, sound is not only filtered by the room but also reconfigured in space during each iteration. The system effectively becomes a feedback loop in which spatial encoding, acoustic propagation, and recording continuously interact.
+The iterative process can be understood through the lens of spectromorphology: each generation undergoes spectral and morphological transformation as the room's acoustic properties selectively reinforce certain frequencies while attenuating others. As a result, the final output reflects not only the resonant characteristics of the room but also the structural influence of the speaker arrangement and spatial processing. What Jonty Harrison describes as changes in "spatial density" becomes audible across generations — the concentrated energy of the original source material gradually disperses and reconcentrates according to the room's modal behavior and the spatial logic of the array.
 
 The project is implemented in PureData, with the Zerr~ externals handling the spatialization. In our patch, the input audio is continuously analyzed for its spectral centroid — a descriptor that tracks the "center of mass" of the sound's frequency content over time. This single feature drives the entire spatial response: the centroid value controls a set of eight gain envelopes, one per speaker, which together determine how the sound is dispersed across the array. Bright, spectrally unstable input activates multiple envelopes at once and spreads the sound across many speakers; stable input produces sparse envelope activity and focuses the sound to fewer points. No manual panning is involved.
+
 We also customized two parameters that shape the character of the spatial movement. A custom trajectory ordering (1 8 2 7 3 6 4 5) pairs opposite speakers rather than walking them sequentially, so the sound leaps across the room instead of orbiting the listener. A topological "neighbor graph" defines which speakers are considered logically adjacent — independent of their physical positions — and the spatial trajectory walks this graph, producing non-circular, almost teleporting motion.
 
 ![Pure Data patch](pd.png)
@@ -48,3 +52,8 @@ Overall, our findings suggest that the system reveals not only the resonant char
 
 ## References
 - [Lucier, Alvin. *I Am Sitting in a Room*. 1969.](https://www.youtube.com/watch?v=bhtO4DsSazc&list=RDbhtO4DsSazc&start_radio=1)
+- Smalley, Denis. "Space-Form and the Acousmatic Image." Organised Sound 12, no. 1 (2007): 35–58.
+- Smalley, Denis. "Spectromorphology: Explaining Sound-Shapes." Organised Sound 2, no. 2 (1997): 107–126.
+- Harrison, Jonty. "Sound, Space, Sculpture: Some Thoughts on the 'What', 'How' and 'Why' of Sound Diffusion." Organised Sound 3, no. 2 (1998): 117–127.
+- [Ferrari, Luc. *Presque Rien n°1*](https://www.youtube.com/watch?v=8C6XlF_2VrQ)
+
